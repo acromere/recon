@@ -1,4 +1,4 @@
-name: Acromere Recon CI
+name: Recon CI
 
 on:
   push:
