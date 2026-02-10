@@ -1,10 +1,10 @@
-package com.avereon.recon;
+package com.acromere.recon;
 
-import com.avereon.data.Node;
-import com.avereon.product.Product;
-import com.avereon.product.Rb;
-import com.avereon.xenon.resource.Resource;
-import com.avereon.xenon.resource.Codec;
+import com.acromere.data.Node;
+import com.acromere.product.Product;
+import com.acromere.product.Rb;
+import com.acromere.xenon.resource.Resource;
+import com.acromere.xenon.resource.Codec;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,7 +22,7 @@ import java.util.Set;
 @CustomLog
 public class NetworkGraphCodec extends Codec {
 
-	static final String MEDIA_TYPE = "application/vnd.avereon.recon.network.graph";
+	static final String MEDIA_TYPE = "application/vnd.acromere.recon.network.graph";
 
 	private final Product product;
 

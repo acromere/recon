@@ -1,16 +1,16 @@
-package com.avereon.recon;
+package com.acromere.recon;
 
-import com.avereon.product.Rb;
-import com.avereon.skill.RunPauseResettable;
-import com.avereon.xenon.RbKey;
-import com.avereon.xenon.ProgramTool;
-import com.avereon.xenon.XenonProgramProduct;
-import com.avereon.xenon.action.common.RunPauseAction;
-import com.avereon.xenon.resource.Resource;
-import com.avereon.xenon.resource.OpenAssetRequest;
-import com.avereon.xenon.task.Task;
-import com.avereon.xenon.task.TaskManager;
-import com.avereon.xenon.util.Lambda;
+import com.acromere.product.Rb;
+import com.acromere.skill.RunPauseResettable;
+import com.acromere.xenon.RbKey;
+import com.acromere.xenon.ProgramTool;
+import com.acromere.xenon.XenonProgramProduct;
+import com.acromere.xenon.action.common.RunPauseAction;
+import com.acromere.xenon.resource.Resource;
+import com.acromere.xenon.resource.OpenAssetRequest;
+import com.acromere.xenon.task.Task;
+import com.acromere.xenon.task.TaskManager;
+import com.acromere.xenon.util.Lambda;
 import lombok.CustomLog;
 
 import java.util.HashSet;

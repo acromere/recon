@@ -1,4 +1,4 @@
-[build-status]: https://github.com/avereon/recon/workflows/Avereon%20Recon%20Continuous/badge.svg "Build status"
+[build-status]: https://github.com/acromere/recon/workflows/Acromere%20Recon%20Continuous/badge.svg "Build status"
 
 # Recon ![alt text][build-status]
 

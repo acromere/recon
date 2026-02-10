@@ -1,6 +1,6 @@
-package com.avereon.recon;
+package com.acromere.recon;
 
-import com.avereon.data.Node;
+import com.acromere.data.Node;
 
 import java.util.UUID;
 

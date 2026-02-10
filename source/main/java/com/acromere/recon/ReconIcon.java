@@ -1,6 +1,6 @@
-package com.avereon.recon;
+package com.acromere.recon;
 
-import com.avereon.zerra.image.RenderedIcon;
+import com.acromere.zerra.image.RenderedIcon;
 
 public class ReconIcon extends RenderedIcon {
 

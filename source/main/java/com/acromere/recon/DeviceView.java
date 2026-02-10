@@ -1,8 +1,8 @@
-package com.avereon.recon;
+package com.acromere.recon;
 
-import com.avereon.data.NodeEvent;
-import com.avereon.log.LazyEval;
-import com.avereon.zerra.javafx.Fx;
+import com.acromere.data.NodeEvent;
+import com.acromere.log.LazyEval;
+import com.acromere.zerra.javafx.Fx;
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
@@ -68,7 +68,7 @@ class DeviceView extends StackPane {
 					}
 				}
 				case DELETE -> {
-					com.avereon.data.Node parent = getDevice().getParent();
+					com.acromere.data.Node parent = getDevice().getParent();
 					if( parent != null && !(parent instanceof NetworkGraph) ) ((NetworkDevice)parent).removeDevice( device );
 				}
 				case DIGIT0 -> getDevice().setExpected( DeviceResponse.OFFLINE );

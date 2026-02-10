@@ -1,4 +1,4 @@
-package com.avereon.recon;
+package com.acromere.recon;
 
 public enum DeviceRequest {
 
