@@ -80,7 +80,16 @@
 										<image>
 											<class>com.acromere.recon.ReconIcon</class>
 											<target>${images-folder}/product.png</target>
+										</image>
+										<image>
+											<class>com.acromere.recon.ReconIcon</class>
+											<target>${images-folder}/product-light.png</target>
 											<theme>light</theme>
+										</image>
+										<image>
+											<class>com.acromere.recon.ReconIcon</class>
+											<target>${images-folder}/product-dark.png</target>
+											<theme>dark</theme>
 										</image>
 									</images>
 								</configuration>
