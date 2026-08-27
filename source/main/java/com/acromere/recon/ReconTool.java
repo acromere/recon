@@ -7,7 +7,7 @@ import com.acromere.xenon.ProgramTool;
 import com.acromere.xenon.XenonProgramProduct;
 import com.acromere.xenon.action.common.RunPauseAction;
 import com.acromere.xenon.resource.Resource;
-import com.acromere.xenon.resource.OpenAssetRequest;
+import com.acromere.xenon.resource.OpenResourceRequest;
 import com.acromere.xenon.task.Task;
 import com.acromere.xenon.task.TaskManager;
 import com.acromere.xenon.util.Lambda;
@@ -78,13 +78,13 @@ public class ReconTool extends ProgramTool implements RunPauseResettable {
 	}
 
 	@Override
-	protected void ready( OpenAssetRequest request ) {
+	protected void ready( OpenResourceRequest request ) {
 		setTitle( getResource().getName() );
 		setGraphic( getProgram().getIconLibrary().getIcon( "recon" ) );
 	}
 
 	@Override
-	protected void open( OpenAssetRequest request ) {
+	protected void open( OpenResourceRequest request ) {
 		networkGraphTree.setNetworkGraph( getGraph() );
 		//getGraph().register( NodeEvent.NODE_CHANGED, modelChangeHandler );
 	}

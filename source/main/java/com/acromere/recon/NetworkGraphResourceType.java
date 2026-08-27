@@ -18,7 +18,7 @@ public class NetworkGraphResourceType extends ResourceType {
 	}
 
 	@Override
-	public boolean assetOpen( Xenon program, Resource resource ) {
+	public boolean resourceOpen( Xenon program, Resource resource ) {
 		resource.setModel( new NetworkGraph() );
 		return true;
 	}

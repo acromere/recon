@@ -39,7 +39,7 @@ public class NetworkGraphCodec extends Codec {
 
 	@Override
 	public String getName() {
-		return Rb.text( "asset", "codec-netgraph-name" );
+		return Rb.text( "resource", "codec-netgraph-name" );
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class NetworkGraphCodec extends Codec {
 
 			if( root != null ) ((NetworkGraph)resource.getModel()).setRootDevice( root );
 		} catch( Throwable throwable ) {
-			throw new IOException( "Error loading asset", throwable );
+			throw new IOException( "Error loading resource", throwable );
 		}
 	}
 
