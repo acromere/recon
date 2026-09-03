@@ -1,7 +1,7 @@
 package com.acromere.recon;
 
 import com.acromere.data.DataNode;
-import com.acromere.data.NodeEvent;
+import com.acromere.data.DataNodeEvent;
 import com.acromere.log.LazyEval;
 import com.acromere.zerra.javafx.Fx;
 import javafx.geometry.Bounds;
@@ -46,7 +46,7 @@ class DeviceView extends StackPane {
 		setAlignment( Pos.CENTER );
 		getChildren().addAll( expected, actual );
 
-		device.register( NodeEvent.ANY, e -> Fx.run( this::updateState ) );
+		device.register( DataNodeEvent.ANY, e -> Fx.run( this::updateState ) );
 
 		expected.addEventHandler( MouseEvent.MOUSE_PRESSED, e -> {
 			//log.log( Log.WARN, "mouse pressed" );

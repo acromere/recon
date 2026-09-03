@@ -1,6 +1,6 @@
 package com.acromere.recon;
 
-import com.acromere.data.NodeEvent;
+import com.acromere.data.DataNodeEvent;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.layout.TilePane;
@@ -48,13 +48,13 @@ public class NetworkGraphTree extends VBox {
 		getChildren().add( deviceView.getDetails() );
 
 		// For adding a new device
-		device.register( NodeEvent.CHILD_ADDED, e -> {
+		device.register( DataNodeEvent.CHILD_ADDED, e -> {
 			if( e.getNode() != device ) return;
 			addDevice( e.getNewValue() );
 		} );
 
 		// For removing the device
-		device.register( NodeEvent.REMOVED, e -> {
+		device.register( DataNodeEvent.REMOVED, e -> {
 			getChildren().remove( deviceView.getDetails() );
 			groupView.getViews().remove( deviceView );
 		} );
