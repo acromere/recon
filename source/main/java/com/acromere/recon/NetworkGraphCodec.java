@@ -1,6 +1,6 @@
 package com.acromere.recon;
 
-import com.acromere.data.Node;
+import com.acromere.data.DataNode;
 import com.acromere.product.Product;
 import com.acromere.product.Rb;
 import com.acromere.xenon.resource.Resource;
@@ -106,7 +106,7 @@ public class NetworkGraphCodec extends Codec {
 
 		Set<Map<String, String>> deviceMaps = new HashSet<>();
 		root.walk( d -> {
-			Node p = d.getParent();
+			DataNode p = d.getParent();
 			NetworkDevice parent = null;
 			if( p instanceof NetworkDevice ) parent = (NetworkDevice)p;
 

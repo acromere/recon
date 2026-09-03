@@ -1,11 +1,11 @@
 package com.acromere.recon;
 
-import com.acromere.data.Node;
+import com.acromere.data.DataNode;
 
 import java.net.InetAddress;
 import java.util.UUID;
 
-public class NetworkGraph extends Node {
+public class NetworkGraph extends DataNode {
 
 	private static final String ID = "id";
 

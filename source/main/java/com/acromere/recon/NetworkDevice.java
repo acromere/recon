@@ -1,6 +1,6 @@
 package com.acromere.recon;
 
-import com.acromere.data.Node;
+import com.acromere.data.DataNode;
 import com.acromere.util.ThreadUtil;
 import javafx.scene.shape.Shape;
 import lombok.CustomLog;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
 @CustomLog
-public class NetworkDevice extends Node {
+public class NetworkDevice extends DataNode {
 
 	private static final String ID = "id";
 
@@ -230,7 +230,7 @@ public class NetworkDevice extends Node {
 
 	public int getLevel() {
 		int level = 0;
-		Node node = getParent();
+		DataNode node = getParent();
 		while( !(node instanceof NetworkGraph) ) {
 			level++;
 			node = node.getParent();
@@ -242,7 +242,7 @@ public class NetworkDevice extends Node {
 		Boolean isRoot = getValue( ROOT );
 		if( isRoot != null ) return isRoot;
 
-		Node parent = getParent();
+		DataNode parent = getParent();
 		isRoot = parent instanceof NetworkGraph;
 		setValue( ROOT, isRoot );
 		return isRoot;

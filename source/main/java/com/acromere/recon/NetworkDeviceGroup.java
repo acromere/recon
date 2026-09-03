@@ -1,10 +1,10 @@
 package com.acromere.recon;
 
-import com.acromere.data.Node;
+import com.acromere.data.DataNode;
 
 import java.util.UUID;
 
-public class NetworkDeviceGroup extends Node {
+public class NetworkDeviceGroup extends DataNode {
 
 	public static final NetworkDeviceGroup DEFAULT = new NetworkDeviceGroup( "" );
 

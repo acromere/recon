@@ -1,5 +1,6 @@
 package com.acromere.recon;
 
+import com.acromere.data.DataNode;
 import com.acromere.data.NodeEvent;
 import com.acromere.log.LazyEval;
 import com.acromere.zerra.javafx.Fx;
@@ -68,7 +69,7 @@ class DeviceView extends StackPane {
 					}
 				}
 				case DELETE -> {
-					com.acromere.data.Node parent = getDevice().getParent();
+					DataNode parent = getDevice().getParent();
 					if( parent != null && !(parent instanceof NetworkGraph) ) ((NetworkDevice)parent).removeDevice( device );
 				}
 				case DIGIT0 -> getDevice().setExpected( DeviceResponse.OFFLINE );
